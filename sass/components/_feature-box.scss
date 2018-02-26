@@ -1,0 +1,21 @@
+
+.feature-heading {
+    padding: 0 8rem 5rem 8rem;
+}
+
+.feature-box {
+
+    &__icon {
+        color: $color-primary;
+    }
+
+    &__item {
+
+    }
+
+    &:hover > &__icon {
+        color: #7C4396;
+    }
+
+
+}

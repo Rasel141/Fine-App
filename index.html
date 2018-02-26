@@ -1,16 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="./node_modules/bootstrap/scss/bootstrap.scss"> -->
+
+  <!-- Bootstrap SCSS -->
+  <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap SCSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Hello, world!</title>
 </head>
+
 <body>
+
+
+
+  <header class="header u-padding-y">
+
     <div class="container">
-        <h1 class="bg-dark  text-white">Hello</h1>
+      <div class="row">
+
+        <div class="col-md-6  d-flex flex-column justify-content-center">
+
+          <div class="header__text-box">
+            <h1 class="header-primary u-margin-bottom-small">
+              App Landing Page
+            </h1>
+            <p class="paragraph u-margin-bottom-medium">Lorem Ipsum is simply dummy text of the printing and type setting industry consectetur adipisicing elit, remaining
+              essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing tempor
+              incididunt!
+            </p>
+          </div>
+
+          <div class="d-flex">
+            <a href="#" class="btn btn-outline-danger btn-lg mr-3 button-rounded">
+              <i class="fab fa-apple"></i>
+              <span>App Store</span>
+            </a>
+
+            <a href="#" class="btn btn-outline-danger btn-lg button-rounded">
+              <i class="fab fa-android"></i>
+              <span>Google Play</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-6  d-flex flex-column justify-content-center">
+
+          <img src="img/header-phone.png" alt="header phone" class="img-fluid">
+
+        </div>
+
+      </div>
+      <!-- .row -->
     </div>
-    
+    <!-- .container -->
+
+  </header>
+
+  <main>
+
+    <section class="section-about u-padding-y">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 ">
+            <img src="./img/feature2-image.png" alt="buy" class="img-fluid">
+          </div>
+
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="heading-secondary text-white u-margin-bottom-medium">
+              Learn how to make your app marketing efficient
+            </h2>
+            <p class="paragraph text-white">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of Letraset.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-feature u-padding-y">
+
+      <div class="container">
+
+        <div class="feature-heading text-center">
+            <h2 class="heading-secondary u-margin-bottom-small">Our Amazing beautiful features</h2>
+            <p class="paragraph ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s.
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-box d-flex">
+              <div class="feature-box__icon pr-4">
+                <i class="fas fa-paint-brush fa-3x"></i>
+              </div>
+              <div class="feature-box__item">
+                  <h4>Fully Customizable</h4>
+                  <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                    literature.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box d-flex">
+              <div class="feature-box__icon pr-4">
+                <i class="fas fa-rss fa-3x"></i>
+              </div>
+              <div class="feature-box__item">
+                  <h4>Responsive Design</h4>
+                  <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                    literature.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box d-flex">
+              <div class="feature-box__icon pr-4">
+                  <i class="fas fa-recycle fa-3x"></i>
+              </div>
+              <div class="feature-box__item">
+                  <h4>Amazing Design</h4>
+                  <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+                  </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <section class="section-feature-focus text-white">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <h3>Our Focused on Feature</h3>
+
+            <div class="feature__item">
+              <div class="feature__icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>Reliable and Secure Platform</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisici ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea com</p>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__icon">
+                  <i class="fas fa-rss"></i>
+              </div>
+              <h4>Reliable and Secure Platform</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisici ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea com</p>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__icon">
+                  <i class="fas fa-recycle"></i>
+              </div>
+              <h4>Reliable and Secure Platform</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisici ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea com</p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <img src="./img/featured-app.png" alt="feature-app" class="img-fluid">
+          </div>
+
+        </div>
+      </div>
+
+    </section> -->
+
+  </main>
+
+
+
+
+
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- Jquery -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
+
 </html>
