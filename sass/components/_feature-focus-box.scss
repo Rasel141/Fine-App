@@ -1,0 +1,12 @@
+.feature-focus-box {
+
+    &__icon {
+        color: $color-primary;
+        width: 4.25rem;
+        height: 4.25rem;
+        background-color: $color-white;
+        border-radius: 50%;
+        margin-right: .5rem;
+        padding: 1.5rem;
+    }
+}

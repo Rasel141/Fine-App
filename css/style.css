@@ -6053,16 +6053,30 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 100px 0; }
 
 .button-rounded {
-  border-radius: 100px; }
+  border-radius: 100px;
+  transition: all .8s ease; }
 
 .feature-heading {
   padding: 0 8rem 5rem 8rem; }
 
 .feature-box__icon {
-  color: #e01931; }
+  color: #e01931;
+  transition: all .8s ease; }
 
 .feature-box:hover > .feature-box__icon {
   color: #7C4396; }
 
+.feature-focus-box__icon {
+  color: #e01931;
+  width: 4.25rem;
+  height: 4.25rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: .5rem;
+  padding: 1.5rem; }
+
 .section-about {
+  background-color: #e01931; }
+
+.section-feature-focus {
   background-color: #e01931; }
