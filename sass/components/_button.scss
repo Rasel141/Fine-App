@@ -2,3 +2,20 @@
     border-radius: 100px;
     transition: all .8s ease;
 }
+
+.btn-subscribe {
+    background: $color-secondary;
+    color: $color-gray-dark-1;
+    transition: all .8s ease;
+    padding: .8rem 2rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+        background: $color-blue;
+        color: $color-white;
+
+    }
+
+
+}

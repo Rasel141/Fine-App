@@ -6026,6 +6026,162 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y; }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
 .header-primary {
   font-family: sans-serif;
   font-weight: 400;
@@ -6044,17 +6200,30 @@ a.text-dark:hover, a.text-dark:focus {
     margin-bottom: 3rem; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-large {
+  margin-bottom: 3.5rem !important; }
 
 .u-padding-y {
-  padding: 100px 0; }
+  padding: 100px 0 !important; }
 
 .button-rounded {
   border-radius: 100px;
   transition: all .8s ease; }
+
+.btn-subscribe {
+  background: #fad12b;
+  color: #252525;
+  transition: all .8s ease;
+  padding: .8rem 2rem;
+  text-transform: uppercase; }
+  .btn-subscribe:hover, .btn-subscribe:active {
+    background: #1F96E0;
+    color: #fff; }
 
 .feature-heading {
   padding: 0 8rem 5rem 8rem; }
@@ -6075,8 +6244,90 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: .5rem;
   padding: 1.5rem; }
 
+.mail-box {
+  height: 6.25rem;
+  width: 6.25rem;
+  border: 1px solid #e01931;
+  border-radius: 50%;
+  padding: 3rem;
+  color: #e01931; }
+  .mail-box svg {
+    position: relative;
+    top: .9rem;
+    right: .8rem; }
+
+.underline {
+  width: 6.25rem;
+  height: 3px;
+  margin: 0 auto;
+  background: #FAD12C; }
+
 .section-about {
   background-color: #e01931; }
 
 .section-feature-focus {
   background-color: #e01931; }
+
+.section-subscribe__input input {
+  padding: 0 1.5rem;
+  background: #E9E9E9;
+  border: none;
+  box-shadow: none;
+  outline: none; }
+
+.section-subscribe__input input:focus {
+  padding: 0 1.5rem;
+  background: #E9E9E9;
+  border: none;
+  box-shadow: none;
+  outline: none; }
+
+.section-subscribe ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 1.25rem;
+  color: #333333; }
+
+.section-subscribe ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 1.25rem;
+  color: #333333; }
+
+.section-subscribe :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 1.25rem;
+  color: #333333; }
+
+.section-subscribe :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 1.25rem;
+  color: #333333; }
+
+.section-screenshot {
+  background-color: #e01931;
+  position: relative; }
+  .section-screenshot__carousel-img-box {
+    padding: .6rem;
+    background: #fff; }
+  .section-screenshot__carousel img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: all .8s ease; }
+  .section-screenshot__carousel img:hover {
+    border: 2px solid #e01931;
+    border-radius: 4px;
+    cursor: pointer; }
+  .section-screenshot__carousel .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+    text-align: center;
+    right: 0; }
+  .section-screenshot__carousel .owl-dot {
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background: rgba(243, 48, 48, 0.514);
+    display: inline-block;
+    margin-right: .5rem; }
+  .section-screenshot__carousel .owl-dot.active {
+    background: #F33030; }

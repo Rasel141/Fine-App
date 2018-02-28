@@ -5,3 +5,86 @@
 .section-feature-focus {
     background-color: $color-primary;
 }
+
+.section-subscribe {
+
+    &__input  input{
+        padding: 0 1.5rem;
+        background: $color-gray-light-1;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+
+    &__input input:focus {   
+        padding: 0 1.5rem;
+        background: $color-gray-light-1;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 1.25rem;
+        color: $color-gray-dark-2;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        font-size: 1.25rem;
+        color: $color-gray-dark-2;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        font-size: 1.25rem;
+        color: $color-gray-dark-2;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        font-size: 1.25rem;
+        color: $color-gray-dark-2;
+      }
+    
+}
+
+.section-screenshot {
+    background-color: $color-primary;
+    position: relative;
+
+    &__carousel-img-box {
+        padding: .6rem;
+        background: $color-white;  
+    }
+        
+
+    &__carousel img {
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        transition: all .8s ease;
+    }
+    &__carousel img:hover {
+        border: 2px solid $color-primary;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &__carousel .owl-dots {
+        position: absolute;
+        left: 0;
+        bottom: -2rem;
+        text-align: center;
+        right: 0;
+    }
+    
+    &__carousel .owl-dot{
+        height: .8rem;
+        width: .8rem;
+        border-radius: 50%;
+        background: rgba(243, 48, 48, 0.514);
+        display: inline-block;
+        margin-right: .5rem;
+    }
+
+    &__carousel .owl-dot.active {
+        background: #F33030;
+    }
+
+
+    
+}

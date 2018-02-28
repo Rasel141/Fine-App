@@ -1,0 +1,16 @@
+.mail-box {
+    height: 6.25rem;
+    width: 6.25rem;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    padding: 3rem;
+    color: $color-primary;
+    // text-align: center;
+
+    & svg {
+        position: relative;
+        top: .9rem;
+        right: .8rem;
+    }
+}
+
