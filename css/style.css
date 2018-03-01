@@ -6262,6 +6262,25 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 auto;
   background: #FAD12C; }
 
+.client__box {
+  display: flex;
+  justify-content: center; }
+  .client__box-img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    border: 1px solid #fff; }
+
+.client__message {
+  text-align: center;
+  padding: 2rem 5rem;
+  font-size: 1.2rem; }
+
+.client__details {
+  text-align: center; }
+  .client__details-designation {
+    color: #e01931; }
+
 .section-about {
   background-color: #e01931; }
 
@@ -6330,4 +6349,22 @@ a.text-dark:hover, a.text-dark:focus {
     display: inline-block;
     margin-right: .5rem; }
   .section-screenshot__carousel .owl-dot.active {
+    background: #F33030; }
+
+.section-clients {
+  background-color: #fad12b; }
+  .section-clients__list .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: -2.5rem;
+    text-align: center;
+    right: 0; }
+  .section-clients__list .owl-dot {
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background: rgba(243, 48, 48, 0.514);
+    display: inline-block;
+    margin-right: .5rem; }
+  .section-clients__list .owl-dot.active {
     background: #F33030; }

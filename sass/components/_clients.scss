@@ -1,0 +1,32 @@
+.client {
+
+    &__box {
+        display: flex;
+        justify-content: center;
+
+        &-img {
+            width: 120px !important; 
+            height: 120px !important;
+            border-radius: 50%;
+            border: 1px solid $color-white;
+        }
+    }
+
+    &__message {
+        text-align: center;
+        padding: 2rem 5rem;
+        font-size: 1.2rem;
+    }
+
+    &__details {
+        text-align: center;
+
+        &-name {
+
+        }
+
+        &-designation {
+            color: $color-primary;
+        }
+    }
+}
