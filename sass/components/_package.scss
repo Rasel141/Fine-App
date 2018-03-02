@@ -1,0 +1,43 @@
+.package {
+    &__heading {
+        padding: .8rem;
+        background: $color-primary;
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 6.25rem;
+        border: 5px solid #fff;
+        margin-bottom: -2.19rem;
+        position: relative;
+        z-index: 999;
+        & h3 {
+            font-size: 1.125rem;
+        }
+    }
+    &__body {
+        border-radius: 1rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding: 1rem;
+    }
+    &__price-box {
+        padding-top: 3.5rem;
+    }
+    &__price-symbol {
+        font-size: 1.25rem;
+        position: relative;
+        bottom: 48px;
+    }
+    &__price {
+        font-size: 4rem;
+    }
+    &__date {}
+    &__details {
+        line-height: 4;
+        & ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}

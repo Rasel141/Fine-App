@@ -6225,6 +6225,18 @@ a.text-dark:hover, a.text-dark:focus {
     background: #1F96E0;
     color: #fff; }
 
+.package__btn a {
+  background: #fad12b;
+  text-transform: uppercase;
+  padding: .5rem 2.5rem;
+  color: #252525;
+  transition: all .8s ease; }
+
+.package__btn a:hover,
+.package__btn a:hover {
+  background: #e01931;
+  color: #fff; }
+
 .feature-heading {
   padding: 0 8rem 5rem 8rem; }
 
@@ -6280,6 +6292,63 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center; }
   .client__details-designation {
     color: #e01931; }
+
+.package__heading {
+  padding: .8rem;
+  background: #e01931;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6.25rem;
+  border: 5px solid #fff;
+  margin-bottom: -2.19rem;
+  position: relative;
+  z-index: 999; }
+  .package__heading h3 {
+    font-size: 1.125rem; }
+
+.package__body {
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 1rem; }
+
+.package__price-box {
+  padding-top: 3.5rem; }
+
+.package__price-symbol {
+  font-size: 1.25rem;
+  position: relative;
+  bottom: 48px; }
+
+.package__price {
+  font-size: 4rem; }
+
+.package__details {
+  line-height: 4; }
+  .package__details ul {
+    list-style: none;
+    padding: 0; }
+
+.footer {
+  padding: 3.125rem; }
+  .footer__list {
+    margin-bottom: 1.5rem; }
+  .footer__link {
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e01931;
+    background: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    color: #e01931;
+    transition: all .8s ease; }
+    .footer__link:hover {
+      background: #e01931;
+      color: #fff; }
 
 .section-about {
   background-color: #e01931; }
@@ -6368,3 +6437,6 @@ a.text-dark:hover, a.text-dark:focus {
     margin-right: .5rem; }
   .section-clients__list .owl-dot.active {
     background: #F33030; }
+
+.section-package {
+  background-color: #e01931; }

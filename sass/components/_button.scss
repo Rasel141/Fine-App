@@ -9,13 +9,26 @@
     transition: all .8s ease;
     padding: .8rem 2rem;
     text-transform: uppercase;
-
     &:hover,
     &:active {
         background: $color-blue;
         color: $color-white;
+    }
+}
 
+.package__btn {
+    & a {
+        background: $color-secondary;
+        text-transform: uppercase;
+        padding: .5rem 2.5rem;
+        color: $color-gray-dark-1;
+        transition: all .8s ease;
     }
 
+    & a:hover,
+    & a:hover {
+        background: $color-primary;
+        color: $color-white;
+    }
 
 }
