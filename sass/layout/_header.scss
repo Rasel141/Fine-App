@@ -1,0 +1,22 @@
+.header {
+    background: $color-primary;
+    min-height: 80px;
+}
+
+.logo {
+    width: 65%;
+}
+
+ul.navbar-nav>li>a.active {
+    color: $color-secondary;
+}
+
+ul.navbar-nav>li>a {
+    margin-left: 1rem;
+}
+.navbar {
+    transition: all .5s ease-in-out;
+}
+.header-nav {
+    background: rgba(0, 0, 0, .87);
+}

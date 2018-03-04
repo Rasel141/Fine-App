@@ -6182,6 +6182,24 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100%;
   width: 100%; }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+a {
+  color: #fff;
+  transition: all .8s ease; }
+
+a:hover,
+a:active {
+  color: #fad12b; }
+
 .header-primary {
   font-family: sans-serif;
   font-weight: 400;
@@ -6330,6 +6348,25 @@ a.text-dark:hover, a.text-dark:focus {
   .package__details ul {
     list-style: none;
     padding: 0; }
+
+.header {
+  background: #e01931;
+  min-height: 80px; }
+
+.logo {
+  width: 65%; }
+
+ul.navbar-nav > li > a.active {
+  color: #fad12b; }
+
+ul.navbar-nav > li > a {
+  margin-left: 1rem; }
+
+.navbar {
+  transition: all .5s ease-in-out; }
+
+.header-nav {
+  background: rgba(0, 0, 0, 0.87); }
 
 .footer {
   padding: 3.125rem; }
