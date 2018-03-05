@@ -69,11 +69,11 @@ $(function () {
             // hide nav
             $("nav").removeClass("header-nav");
             
-            // $("#back-to-top").fadeOut();
+            $("#back-to-top").fadeOut();
         } else {
             // show nav
             $("nav").addClass("header-nav");
-            // $("#back-to-top").fadeIn();
+            $("#back-to-top").fadeIn();
         }
     });
 
@@ -93,3 +93,20 @@ $(function () {
     });
 
 });
+
+
+// Wow js
+
+// main wow script
+ new WOW().init();
+
+//  repeat animation
+/*
+window.addEventListener('scroll', function(e) {
+    if( $(window).scrollTop() <= 50) {
+        $('.wow').removeClass('animated');
+        $('.wow').removeAttr('style');
+        new WOW().init();
+    }
+});
+*/

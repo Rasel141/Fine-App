@@ -6255,6 +6255,21 @@ a:active {
   background: #e01931;
   color: #fff; }
 
+.btn-back-to-top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.38rem;
+  padding: 3px .9rem;
+  border-radius: 0;
+  display: none;
+  background: #e01930;
+  transition: all .8s ease; }
+
+.btn-back-to-top:hover {
+  background: #fad12b;
+  color: #e01931; }
+
 .feature-heading {
   padding: 0 8rem 5rem 8rem; }
 

@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Rasel141/Fine-App#readme",
   "dependencies": {
+    "animate.css": "^3.6.1",
     "autoprefixer": "^7.2.6",
     "bootstrap": "^4.0.0",
     "concat": "^1.0.3",
@@ -32,6 +33,7 @@
     "npm-run-all": "^4.1.2",
     "owl.carousel": "^2.2.0",
     "popper.js": "^1.12.9",
-    "postcss-cli": "^5.0.0"
+    "postcss-cli": "^5.0.0",
+    "wow.js": "^1.2.2"
   }
 }
