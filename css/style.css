@@ -6301,6 +6301,12 @@ a:active {
     top: .9rem;
     right: .8rem; }
 
+.navbar-toggler {
+  border: 1px solid #fff; }
+
+.navbar-toggler-icon-custom {
+  color: #fff; }
+
 .underline {
   width: 6.25rem;
   height: 3px;
@@ -6345,7 +6351,8 @@ a:active {
   text-align: center;
   position: relative;
   z-index: 1;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-bottom: 2rem; }
 
 .package__price-box {
   padding-top: 3.5rem; }
@@ -6378,7 +6385,8 @@ ul.navbar-nav > li > a {
   margin-left: 1rem; }
 
 .navbar {
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  background: #e01931; }
 
 .header-nav {
   background: rgba(0, 0, 0, 0.87); }

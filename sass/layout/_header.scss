@@ -16,6 +16,7 @@ ul.navbar-nav>li>a {
 }
 .navbar {
     transition: all .5s ease-in-out;
+    background: $color-primary;
 }
 .header-nav {
     background: rgba(0, 0, 0, .87);
